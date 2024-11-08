@@ -1,0 +1,14 @@
+quarkus:
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: 1234
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/joauth_db
+  log:
+    category:
+      "io.quarkus.category":
+        level: INFO
+  hibernate-orm:
+    database:
+      generation: drop-and-create
